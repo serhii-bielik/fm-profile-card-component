@@ -7,37 +7,96 @@
 }
 
 :root {
-  --dark-gray: #969696;
+  --clr-white: #ffffff;
+  --clr-dark-gray: #969696;
   --clr-cyan: #19a2ae;
   --clr-dark-blue: #2d3248;
-  --clr-grayish-blue: #6a6f81;
 }
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  color: var(--clr-dark-blue);
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-cyan);
+  background-image: url('./images/bg-pattern-top.svg'),
+    url('./images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: right 40vw, left 50vw;
+  background-position-y: bottom 50vh, top 30vh;
 }
+
 .profile-card {
+  width: 100%;
+  max-width: 350px;
+  min-width: 250px;
+  margin: 0 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--clr-white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
 .profile-card__header {
+  position: relative;
+  height: 140px;
+  background-image: url('./images/bg-pattern-card.svg');
 }
+
 .profile-card__avatar {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  box-shadow: 0 0 0 5px var(--clr-white);
+  border-radius: 50%;
+  bottom: -3rem;
+  left: calc(50% - 3rem);
 }
+
 .profile-card__name {
+  margin-top: 4.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
+
 .profile-card__age {
+  margin-left: 0.5rem;
+  color: var(--clr-dark-gray);
+  font-weight: 400;
 }
+
 .profile-card__location {
+  font-size: 0.9rem;
+  color: var(--clr-dark-gray);
 }
+
 .profile-card__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .profile-card__stats-item {
 }
+
 .profile-card__stats-value {
+  font-weight: 700;
 }
+
 .profile-card__stats-label {
+  margin-top: 0.2rem;
+  color: var(--clr-dark-gray);
+  letter-spacing: 0.1rem;
+  font-size: 0.65rem;
 }
