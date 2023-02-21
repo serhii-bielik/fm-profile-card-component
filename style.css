@@ -29,8 +29,8 @@ body {
   background-image: url('./images/bg-pattern-top.svg'),
     url('./images/bg-pattern-bottom.svg');
   background-repeat: no-repeat, no-repeat;
-  background-position-x: right 40vw, left 50vw;
-  background-position-y: bottom 50vh, top 30vh;
+  background-position-x: right 53vw, left 49vw;
+  background-position-y: bottom 32vh, top 50vh;
 }
 
 .profile-card {
